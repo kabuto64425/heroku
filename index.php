@@ -1,6 +1,9 @@
 <?php
   session_start();
-  $_SESSION['count'] = 0;
+
+　if(isset($_SESSION['count'])) {
+    $_SESSION['count'] = 0;
+ }
 
   if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $_SESSION['count'] = $_SESSION['count'] + 1;
