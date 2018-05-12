@@ -3,6 +3,9 @@
   if(!array_key_exists('count', $_SESSION)) {
     $_SESSION['count'] = 0;
   }
+  if($_SERVER['REQUEST_METHOD'] === 'POST'){
+    $_SESSION['count'] = $_SESSION['count'] + 1;
+  }
 ?>
 <form action="" method="POST">
   <input type="text" name="name" placeholder="ダルビッシュと入力してください">
