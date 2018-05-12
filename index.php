@@ -25,9 +25,11 @@
   <input type="hidden" name="count" value="<?php
                                            //!array_key_exists('count', $_POST)
                                            if(!array_key_exists('count', $_POST)) {
-                                             echo 0;
+                                             $count = 0;
                                            } else {
-                                             echo $_POST['count'];
+                                             $count = $_POST['count'];
                                            }
+                                           echo $count;
                                            ?>">
 </form>
+<?php echo $count; ?>
