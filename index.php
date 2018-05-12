@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-　if(!isset($_SESSION['count'])) {
+　if(!array_key_exists($count, $_SESSION)) {
     $_SESSION['count'] = 0;
  }
 
