@@ -7,6 +7,11 @@
     $_SESSION['count'] = $_SESSION['count'] + 1;
   }
   echo $_SESSION['count'];
+  
+  $data = "https://spreadsheets.google.com/feeds/list/18DtL1BZ7KvPToRWVPgJ4EYcH8q2HK9WPs-ruUAShJf4/od6/public/values?alt=json";
+  $json = file_get_contents($data);
+  $json_decode = json_decode($json);
+
 ?>
 <form action="" method="POST">
   <input type="text" name="name" placeholder="ダルビッシュと入力してください">
