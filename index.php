@@ -1,5 +1,5 @@
 <?php
-  $name = 0;
+  static $name = 0;
 
   if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $name = $name + 1;
