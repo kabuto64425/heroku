@@ -1,10 +1,11 @@
 <?php
-  static $name = 0;
+  session_start();
+  $_SESSION['count'] = 0;
 
   if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $name = $name + 1;
+    $_SESSION['count'] = $_SESSION['count'] + 1;
   }
-  echo $name;
+  echo $_SESSION['count'];
 ?>
 <form action="" method="POST">
   <input type="text" name="name" placeholder="ダルビッシュと入力してください">
