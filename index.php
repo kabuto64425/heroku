@@ -13,6 +13,11 @@
   $json_decode = json_decode($json);
   
   $names = $json_decode->feed->entry;
+
+  foreach ($names as $name) {
+    echo $name->{'gsx$問題文'}->{'$t'};
+    echo ",";
+  }
 ?>
 <form action="" method="POST">
   <input type="text" name="name" placeholder="ダルビッシュと入力してください">
