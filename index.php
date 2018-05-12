@@ -16,7 +16,7 @@
 
   foreach ($names as $name) {
     echo $name->{'gsx$問題文'}->{'$t'};
-    echo ",";
+    echo '</br>'
   }
 ?>
 <form action="" method="POST">
