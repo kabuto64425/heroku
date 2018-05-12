@@ -2,7 +2,7 @@
   session_start();
 
 　//if(!array_key_exists('count', $_SESSION)) {
-    $_SESSION['count'] = 0;
+    //$_SESSION['count'] = 0;
  //}
 
   if($_SERVER['REQUEST_METHOD'] === 'POST'){
