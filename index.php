@@ -23,7 +23,7 @@
   <input type="text" name="name" placeholder="ダルビッシュと入力してください">
   <input type="submit" value="submit">
   <input type="hidden" name="count" value="<?php
-                                           !array_key_exists('count', $_POST)
+                                           //!array_key_exists('count', $_POST)
                                            if(!array_key_exists('count', $_POST)) {
                                              echo 0;
                                            } else {
