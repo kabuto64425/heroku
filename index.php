@@ -1,8 +1,7 @@
 <?php
   session_start();
-  $_SESSION['count'] = 0;
-  if(array_key_exists('count', $_SESSION)) {
-    echo 'aaaa';
+  if(!array_key_exists('count', $_SESSION)) {
+    $_SESSION['count'] = 0;
   }
 ?>
 <form action="" method="POST">
