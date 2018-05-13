@@ -1,7 +1,6 @@
 <?php
-  session_start();
   
-  if(!array_key_exists('names', $_SESSION)) {
+  if(!array_key_exists('names', $_COOKIE)) 
     $data = "https://spreadsheets.google.com/feeds/list/18DtL1BZ7KvPToRWVPgJ4EYcH8q2HK9WPs-ruUAShJf4/od6/public/values?alt=json";
     $json = file_get_contents($data);
     $json_decode = json_decode($json);
@@ -12,16 +11,15 @@
     $names = $_SESSION['names'];
   }
   
-  if(!array_key_exists('count', $_SESSION)) {
-    $_SESSION['count'] = 0;
+  if(!array_key_exists('count', $_COOKIE)) {
+    $_COOKIE['count'] = 0;
   }
 
   if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $_SESSION['count'] = $_SESSION['count'] + 1;
-    header('Location: https://higasumi52.herokuapp.com/index.php');
+    $_COOKIE['count'] = $_COOKIE['count'] + 1;
   }
     
-  $count = $_SESSION['count'];
+  $count = $_COOKIE['count'];
     
   echo $names[$count]->{'gsx$問題文'}->{'$t'};
   echo '</br>';
