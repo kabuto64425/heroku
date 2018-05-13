@@ -21,13 +21,17 @@
     header('https://higasumi52.herokuapp.com/index.php');
   } else {
     echo 'hello ';
+    
+    echo $names[$count]->{'gsx$問題文'}->{'$t'};
+ 　 echo '</br>';
+    echo $names[$count]->{'gsx$答'}->{'$t'};
+    
+    $count = $_SESSION['count'];
   }
 
-  $count = $_SESSION['count'];
   
-  echo $names[$count]->{'gsx$問題文'}->{'$t'};
-  echo '</br>';
-  echo $names[$count]->{'gsx$答'}->{'$t'};
+  
+  
 ?>
 
 <form action="" method="POST">
