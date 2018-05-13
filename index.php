@@ -27,5 +27,7 @@
   echo $names[$count]->{'gsx$答'}->{'$t'};
 ?>
 
-<input type="submit" value="submit">
+<form action="" method="POST">
+  <input type="submit" value="submit">
+</form>
 
