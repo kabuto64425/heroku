@@ -6,17 +6,17 @@
     $json_decode = json_decode($json);
     
     $names = $json_decode->feed->entry;
-    $_COOKIE['names'] = $names;
+    setcookie(‘names’, $names, time()+60*60*24*7);
   } else {
     $names = $_COOKIE['names'];
   }
   
   if(!array_key_exists('count', $_COOKIE)) {
-    $_COOKIE['count'] = 0;
+    setcookie(‘count’, 0, time()+60*60*24*7);
   }
 
   if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $_COOKIE['count'] = $_COOKIE['count'] + 1;
+    setcookie(‘count’, $_COOKIE['count'] + 1, time()+60*60*24*7);
   }
     
   $count = $_COOKIE['count'];
