@@ -22,8 +22,8 @@
 
   $count = $_SESSION['count'];
   
-  //echo $names[$count]->{'gsx$問題文'}->{'$t'}</br>;
-  echo $names[$count]->{'gsx$答'}->{'$t'} + '</br>';
+  echo $names[$count]->{'gsx$問題文'}->{'$t'} + '</br>';
+  echo $names[$count]->{'gsx$答'}->{'$t'};
 ?>
 <form action="" method="POST">
   <input type="submit" value="submit">
