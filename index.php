@@ -20,6 +20,7 @@
     $_SESSION['count'] = $_SESSION['count'] + 1;
     header('https://higasumi52.herokuapp.com/index.php', true, 303);
   } else {
+    echo 'hello ';
   }
 
   $count = $_SESSION['count'];
