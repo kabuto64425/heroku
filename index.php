@@ -32,4 +32,5 @@
 <form action="" method="POST">
   <input type="submit" value="submit">
 </form>
+<?php echo $count ?>
 
