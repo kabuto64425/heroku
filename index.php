@@ -19,12 +19,7 @@
   if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $_SESSION['count'] = $_SESSION['count'] + 1;
     header('Location: https://higasumi52.herokuapp.com/index.php');
-  } else {
-    
-  
   }
-
-  echo 'hello ';
     
   $count = $_SESSION['count'];
     
@@ -37,5 +32,4 @@
 <form action="" method="POST">
   <input type="submit" value="submit">
 </form>
-<?php echo $count ?>
 
