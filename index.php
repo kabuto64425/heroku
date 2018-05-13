@@ -23,7 +23,8 @@
     
   echo $names[$count]->{'gsx$問題文'}->{'$t'};
   echo '</br>';
-  echo $names[$count]->{'gsx$答'}->{'$t'};  
+  echo $names[$count]->{'gsx$答'}->{'$t'};
+  echo $_COOKIE['count'];
   
 ?>
 
