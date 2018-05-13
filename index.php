@@ -18,6 +18,8 @@
 
   if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $_SESSION['count'] = $_SESSION['count'] + 1;
+    header('https://higasumi52.herokuapp.com/index.php', true, 303);
+  } else {
   }
 
   $count = $_SESSION['count'];
