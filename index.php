@@ -22,7 +22,7 @@
 
   $count = $_SESSION['count'];
   
-  echo $names[$count]->{'gsx$問題文'}->{'$t'}</br>;
+  //echo $names[$count]->{'gsx$問題文'}->{'$t'}</br>;
   echo $names[$count]->{'gsx$答'}->{'$t'}</br>;
 ?>
 <form action="" method="POST">
