@@ -22,11 +22,11 @@
   } else {
     echo 'hello ';
     
+    $count = $_SESSION['count'];
+    
     echo $names[$count]->{'gsx$問題文'}->{'$t'};
  　 echo '</br>';
     echo $names[$count]->{'gsx$答'}->{'$t'};
-    
-    $count = $_SESSION['count'];
   }
 
   
