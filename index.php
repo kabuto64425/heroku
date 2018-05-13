@@ -11,19 +11,19 @@
     $names = $_COOKIE['names'];
   }
   
-  if(!array_key_exists('count', $_COOKIE)) {
-    setcookie(‘count’, 0, time()+60*60*24*7);
-  }
+  //if(!array_key_exists('count', $_COOKIE)) {
+  //  setcookie(‘count’, 0, time()+60*60*24*7);
+  //}
 
-  if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    setcookie(‘count’, $_COOKIE['count'] + 1, time()+60*60*24*7);
-  }
+  //if($_SERVER['REQUEST_METHOD'] === 'POST'){
+  //  setcookie(‘count’, $_COOKIE['count'] + 1, time()+60*60*24*7);
+  //}
     
-  $count = $_COOKIE['count'];
+  //$count = $_COOKIE['count'];
     
-  echo $names[$count]->{'gsx$問題文'}->{'$t'};
-  echo '</br>';
-  echo $names[$count]->{'gsx$答'}->{'$t'};  
+  //echo $names[$count]->{'gsx$問題文'}->{'$t'};
+  //echo '</br>';
+  //echo $names[$count]->{'gsx$答'}->{'$t'};  
   
 ?>
 
