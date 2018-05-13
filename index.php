@@ -1,6 +1,6 @@
 <?php
   
-  if(!array_key_exists('names', $_COOKIE)) {
+  if(!isset($_COOKIE['names'])) {
     $data = "https://spreadsheets.google.com/feeds/list/18DtL1BZ7KvPToRWVPgJ4EYcH8q2HK9WPs-ruUAShJf4/od6/public/values?alt=json";
     $json = file_get_contents($data);
     $json_decode = json_decode($json);
@@ -11,7 +11,7 @@
     $names = $_COOKIE['names'];
   }
   
-  if(!array_key_exists('count', $_COOKIE)) {
+  if(!isset($_COOKIE['count'])) {
     echo 'aaa';
     setcookie(‘count’, 0, time()+60*60*24*7);
   }
