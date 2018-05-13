@@ -12,6 +12,7 @@
   }
   
   if(!array_key_exists('count', $_COOKIE)) {
+    echo 'aaa';
     setcookie(‘count’, 0, time()+60*60*24*7);
   }
 
