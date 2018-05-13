@@ -6,9 +6,9 @@
     $json_decode = json_decode($json);
     
     $names = $json_decode->feed->entry;
-    $_SESSION['names'] = $names;
+    $_COOKIE['names'] = $names;
   } else {
-    $names = $_SESSION['names'];
+    $names = $_COOKIE['names'];
   }
   
   if(!array_key_exists('count', $_COOKIE)) {
