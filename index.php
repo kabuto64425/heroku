@@ -20,17 +20,17 @@
     $_SESSION['count'] = $_SESSION['count'] + 1;
     header('https://higasumi52.herokuapp.com/index.php');
   } else {
-    echo 'hello ';
     
-    $count = $_SESSION['count'];
-    
-    echo $names[$count]->{'gsx$問題文'}->{'$t'};
-    echo '</br>';
-    echo $names[$count]->{'gsx$答'}->{'$t'};
   
   }
 
-  
+  echo 'hello ';
+    
+  $count = $_SESSION['count'];
+    
+  echo $names[$count]->{'gsx$問題文'}->{'$t'};
+  echo '</br>';
+  echo $names[$count]->{'gsx$答'}->{'$t'};  
   
 ?>
 
