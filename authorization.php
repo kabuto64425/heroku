@@ -2,7 +2,7 @@
 // 設定項目
 $api_key = "C2YLvwvhzWm2RFtJ3uVGkyLEz" ;	// API Key
 $api_secret = "im5xaViA508y3GvnbkoB2bD8l6QKnPV5xKIaEozUFmfgLvWjKa" ;	// API Secret
-$callback_url = "http://localhost/authorization.php" ;	// Callback URL (このプログラムのURLアドレス)
+$callback_url = "https://higasumi52.herokuapp.com/authorization.php" ;	// Callback URL (このプログラムのURLアドレス)
 
 /*** [手順4] ユーザーが戻ってくる ***/
 
